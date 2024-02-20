@@ -3,7 +3,7 @@ import { generateInsertionSortAnimationArray } from "@/algorithms/insertionSort"
 import { generateMergeSortAnimationArray } from "@/algorithms/mergeSort";
 import { generateQuickSortAnimationArray } from "@/algorithms/quickSort";
 import { generateSelectionSortAnimationArray } from "@/algorithms/selectionSort";
-import { SortingAlgorithmsData, SortingAlgorithmsType } from "./types";
+import { SortingAlgorithmType } from "./types";
 
 export function generateRandomNumberFromInterval(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -21,7 +21,7 @@ export const algorithmOptions = [
 ];
 
 export function generateAnimationArray(
-  selectedAlgorithm: SortingAlgorithmsType,
+  selectedAlgorithm: SortingAlgorithmType,
   isSorting: boolean,
   array: number[],
   runAnimation: (animations: [number[], boolean][]) => void
